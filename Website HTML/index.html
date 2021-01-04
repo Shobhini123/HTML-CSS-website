@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+      
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+            <a href="services.html">Services</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="contact.html">Contact</a>
+          </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SHOBHINI TRILOCHAN
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+        <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/casuals\ manGo.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="subtitle">Fashion is part of the daily air and it changes all the time, with all the events. 
+            You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/woman\ GO.jpg)"></div>
+          <div class="img-text-wrapper"></div>
+          <!--<div class="subtitle">Coding bootcamp and learning management system.</div><-->
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/businesswomanGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Eventbrite is the leading event management platform on the web with millions of individuals utilizing their applications
+              to find, register or, and management events in numerous industries.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+        <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/menGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Don't be into trends. Don't make fashion own you, but you decide what you are, 
+            what you want to express by the way you dress and the way to live.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+        <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/ethnicmanGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/ethnicGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">I like my money right where I can see it…hanging in my closet.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/weddingGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">I think there is beauty in everything. What 'normal' people perceive as ugly,
+             I can usually see something of beauty in it.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/indian\ weddingGo.png)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Style is something each of us already has, all we need to do is find it.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/seasonsgo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Fashion is the armor to survive the reality of everyday life.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/brandsGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">I don't design clothes. I design dreams.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="left">
+          <div class="portfolio-img-background" style="background-image:url(images/AccessoriesGo.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Anyone can get dressed up and glamorous,
+             but it is how people dress in their days off that are the most intriguing.</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+            <div class="right">
+          <div class="portfolio-img-background" style="background-image:url(images/shoes.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Fashions fade, style is eternal.</div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
